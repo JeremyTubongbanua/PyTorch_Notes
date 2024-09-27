@@ -126,3 +126,40 @@ result = tensor.argmax() # returns 4
 tensor = torch.tensor([1, 2, 3, 4, 5])
 result = tensor.argmin() # returns 0
 ```
+
+## Reshaping
+
+Reshapes an input tensor to a defined shape
+
+For example,
+
+```python
+# this is a 2d matrix
+tensor = torch.tensor([[1, 2, 3]])
+# the shape is (1, 3)
+
+# now I want it to be shape (3)
+tensor = tensor.reshape(3)
+tensor # tensor([1, 2, 3])
+```
+
+## View
+
+Return a view of an input tensro of certain shape but keep the same memory as the original tensor
+
+## Stacking
+
+- Vertical stack (vstack) side by side
+- Horizontal stack (hstack) on top of each other
+
+## Squeezing
+
+Remove all `1` dimensions from a tensor
+
+## Unsqueezing
+
+Adds a dimension with size 1 to a tensor
+
+## Permute
+
+Return a view of the input with dimensions permuted (swapped) in a certain way
